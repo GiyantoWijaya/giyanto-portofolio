@@ -1,5 +1,9 @@
 import "./globals.css";
 import { Inter, Francois_One, Graduate } from "next/font/google";
+// fontawesome configuration
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
 
 const inter = Inter({
   weight: ["400", "500", "600", "700"],
@@ -24,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="cupcake">
+    <html lang="en" data-theme="cupcake" class="scroll-smooth">
       <body
         className={`${inter.variable} ${graduate.variable} ${francois_one.variable}`}
       >

@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         "name-color": "#83CD29",
+        "background-content": "#638CDE",
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
